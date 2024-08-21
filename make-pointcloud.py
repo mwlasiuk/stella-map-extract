@@ -37,4 +37,4 @@ with open('poses.csv', 'w') as poses_file:
                     continue
                 landmark = landmarks[str(landmark_id)]
                 pos_w = landmark['pos_w']
-                keyframe_landmarks_file.write(f'{pos_w[0]} {pos_w[1]} {pos_w[2]}\n')
+                keyframe_landmarks_file.write(f'{pos_w[0]}, {pos_w[1]}, {pos_w[2]}\n')
